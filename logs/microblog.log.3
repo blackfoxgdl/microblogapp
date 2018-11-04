@@ -1,0 +1,64 @@
+2018-09-29 22:25:18,419 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:41:33,011 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:42:16,884 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:42:36,696 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:44:26,079 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:45:27,573 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:46:04,801 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:46:46,574 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:47:04,067 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:47:07,080 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:47:33,030 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:47:35,562 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:47:48,173 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:47:58,888 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:49:27,553 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-09-30 00:49:36,957 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-10-01 21:13:11,223 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-10-01 22:06:24,964 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-10-01 22:09:44,591 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-10-01 22:13:29,512 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-10-01 22:31:25,724 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-10-01 22:31:30,920 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-10-01 22:33:08,908 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-10-01 22:34:49,353 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-10-02 00:08:59,260 INFO: Microblog Startup [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/__init__.py:47]
+2018-10-02 00:09:02,958 ERROR: Exception on /user/ruben [GET] [in /Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/routes.py", line 90, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/templates/user.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/templates/base.html", line 43, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/app/templates/user.html", line 24, in block "content"
+    {{ user.followers.count() }} followers, {{ users.followed.count() }} following.
+  File "/Users/rubenalonsocortesmendoza/Documents/Python/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'users' is undefined
