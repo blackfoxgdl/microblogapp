@@ -12,7 +12,7 @@ class Config(object):
 	DB_HOST	   = "localhost"
 
 	# Database Configuration
-	SQLALCHEMY_DATABASE_URI 	   = "mysql+mysqlconnector://{}:{}@{}/{}".format(DB_USER, DB_PASS, DB_HOST, DB_NAME)
+	SQLALCHEMY_DATABASE_URI 	   = os.environ.get('DATABASE_URL') or "mysql+mysqlconnector://{}:{}@{}/{}".format(DB_USER, DB_PASS, DB_HOST, DB_NAME)
 	SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 	MAIL_SERVER   = os.environ.get('MAIL_SERVER')
@@ -24,3 +24,4 @@ class Config(object):
 	POST_PER_PAGE = 3
 	LANGUAGES     = ['en', 'es']
 	ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
+	LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
